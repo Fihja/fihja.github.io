@@ -39,6 +39,22 @@
             background-color: #dc3545;
             color: white;
         }
+        .valentines-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .valentines-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
         .hidden {
             display: none;
         }
@@ -86,6 +102,8 @@
             container.innerHTML = `
                 <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXg0N3lwYnpxcmRnengxZWU0dGozenljdDdnczc1aDRpN2plNzd2cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IzXiddo2twMmdmU8Lv/giphy.gif" alt="Two bears hugging" class="gif">
                 <h1>Ok yay!!!</h1>
+                <p>I have a letter for you ❤️</p>
+                <a href="letter.html" class="valentines-button">Read the Letter</a>
             `;
         });
 
